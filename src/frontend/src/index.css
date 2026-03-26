@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+    /* Page background: very light aqua #E8F6F7 */
+    --background: 0.965 0.022 196;
+    --foreground: 0.24 0.02 250;
+    --card: 1 0 0;
+    --card-foreground: 0.24 0.02 250;
+    --popover: 1 0 0;
+    --popover-foreground: 0.24 0.02 250;
+    /* Primary: orange #F36C21 */
+    --primary: 0.65 0.19 47;
+    --primary-foreground: 1 0 0;
+    /* Secondary: teal #0F8A8A */
+    --secondary: 0.53 0.1 196;
+    --secondary-foreground: 1 0 0;
+    --muted: 0.94 0.025 196;
+    --muted-foreground: 0.5 0.03 220;
+    /* Accent: pale mint */
+    --accent: 0.94 0.03 196;
+    --accent-foreground: 0.24 0.02 250;
+    --destructive: 0.577 0.245 27;
+    --destructive-foreground: 1 0 0;
+    --border: 0.87 0.03 196;
+    --input: 0.92 0.02 196;
+    --ring: 0.65 0.19 47;
+    --chart-1: 0.65 0.19 47;
+    --chart-2: 0.53 0.1 196;
+    --chart-3: 0.3 0.08 255;
+    --chart-4: 0.73 0.16 65;
+    --chart-5: 0.55 0.12 150;
+    --sidebar: 0.94 0.025 196;
+    --sidebar-foreground: 0.24 0.02 250;
+    --sidebar-primary: 0.65 0.19 47;
+    --sidebar-primary-foreground: 1 0 0;
+    --sidebar-accent: 0.88 0.04 196;
+    --sidebar-accent-foreground: 0.24 0.02 250;
+    --sidebar-border: 0.87 0.03 196;
+    --sidebar-ring: 0.65 0.19 47;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Poppins", sans-serif;
+  }
+}
+
+@layer utilities {
+  .text-orange {
+    color: oklch(0.65 0.19 47);
+  }
+  .text-teal {
+    color: oklch(0.53 0.1 196);
+  }
+  .bg-orange {
+    background-color: oklch(0.65 0.19 47);
+  }
+  .bg-teal {
+    background-color: oklch(0.53 0.1 196);
+  }
+  .bg-nav-mint {
+    background-color: oklch(0.94 0.03 196);
+  }
+  .bg-page-aqua {
+    background-color: oklch(0.965 0.022 196);
+  }
+  .border-orange {
+    border-color: oklch(0.65 0.19 47);
+  }
+  .border-teal {
+    border-color: oklch(0.53 0.1 196);
+  }
+  .hover\:bg-orange-dark:hover {
+    background-color: oklch(0.58 0.19 47);
+  }
+}
